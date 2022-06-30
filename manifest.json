@@ -1,0 +1,32 @@
+{
+  "platform-version": "2.2",
+   "dependencies": {
+    "request": "2.88.2",
+    "unirest" :"0.6.0"
+  },
+  "product": {
+    "freshdesk": {
+
+      "location": {
+        "ticket_sidebar": {
+          "url": "index.html",
+          "icon": "styles/images/icon.svg"
+        }
+      },
+      
+
+      "events": {
+        "onTicketCreate": {
+          "handler": "onTicketCreateHandler"
+        }
+      }
+    }
+  },
+  "whitelisted-domains": [
+    "https://*.freshdesk.com"
+  ],
+  "engines": {
+    "node": "14.19.1",
+    "fdk": "8.3.3"
+  }
+}
